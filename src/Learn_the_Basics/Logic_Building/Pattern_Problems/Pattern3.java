@@ -1,7 +1,7 @@
 package Learn_the_Basics.Logic_Building.Pattern_Problems;
 
 class Solution3 {
-    // Function to print Pattern 7
+    // Function to print Pattern 3
     public void pattern3(int N) {
         // Outer loop for rows
         for (int i = 0; i < N; i++) {
