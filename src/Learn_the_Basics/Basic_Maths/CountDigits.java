@@ -10,7 +10,7 @@ class Solution{
 //            n = n/10;
 //        }
 
-        int count =(int) (log10(n) + 1);
+        int count =(int)(log10(n) + 1);
         return count;
     }
 }
