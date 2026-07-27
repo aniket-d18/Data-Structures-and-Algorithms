@@ -1,6 +1,9 @@
 package Learn_the_Basics.Basic_Maths;
 class Solution3{
     public boolean isPalindrome(int n){
+        if( n < 0){
+            return  false ;
+        }
         int dup = n ;
         int reverseNum = 0;
         while(n > 0){
@@ -19,6 +22,6 @@ class Solution3{
 public class Palindrome_Number {
     public static void main(String[] args) {
         Solution3 sol = new Solution3();
-        System.out.println(sol.isPalindrome(1233214));
+        System.out.println(sol.isPalindrome(-123321));
     }
 }
