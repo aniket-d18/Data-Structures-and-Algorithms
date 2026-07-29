@@ -126,6 +126,11 @@ public class LinkedList {
         }
 
         Node temp = head ;
+        for (int i = 1; i < position - 1 ; i++) {
+            temp = temp.next;
+        }
+        //temp.next.next = null ;
+        temp.next = temp.next.next;
 
     }
 
