@@ -39,7 +39,7 @@ class Solution3345{
 }
 
 public class LC3345 {
-    public static void main() {
+    static void main() {
         Solution3345 sol = new Solution3345();
         System.out.println(sol.smallestNumber(15 , 3)) ;
     }
