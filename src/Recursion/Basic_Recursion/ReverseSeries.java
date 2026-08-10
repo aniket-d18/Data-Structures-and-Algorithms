@@ -1,4 +1,4 @@
-package Learn_the_Basics.Basic_Recursion;
+package Recursion.Basic_Recursion;
 class Solution2 {
     public void printNumbers(int n) {
         // Base case: stop when n < 1

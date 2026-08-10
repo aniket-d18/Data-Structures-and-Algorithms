@@ -1,4 +1,4 @@
-package Learn_the_Basics.Basic_Recursion;
+package Recursion.Basic_Recursion;
 class Solution {
     public void printNumbers(int n) {
         helper(1, n);  // start recursion from 1

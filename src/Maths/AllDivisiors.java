@@ -1,7 +1,6 @@
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 class Divisiors{

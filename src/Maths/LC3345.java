@@ -18,7 +18,7 @@
 
 
 
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 class Solution3345{
     public int smallestNumber(int n , int t){
         int i = n ;

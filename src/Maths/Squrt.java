@@ -1,4 +1,4 @@
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 
 class Solution7{
     public int mySqrt(int x){

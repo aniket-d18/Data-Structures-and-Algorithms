@@ -1,4 +1,4 @@
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 class Solution8{
     public double muPow(double x , int n){
         double ans = 1 ;

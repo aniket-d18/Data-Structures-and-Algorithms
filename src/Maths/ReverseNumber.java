@@ -1,4 +1,4 @@
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 class Solution2{
     public int reverseNumber(int n){
 //        if(n > 0) {

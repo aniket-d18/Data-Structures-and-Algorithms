@@ -1,7 +1,6 @@
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 
 import static java.lang.Math.min;
-import static java.lang.Math.toDegrees;
 
 class Solution4{
     public int GCD(int n1 , int n2){

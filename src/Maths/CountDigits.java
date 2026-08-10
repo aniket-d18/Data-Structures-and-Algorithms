@@ -1,4 +1,4 @@
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 
 import static java.lang.Math.log10;
 

@@ -1,4 +1,4 @@
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 class Solution5{
     public boolean  isArmstrong(int n){
         int sum = 0 ;

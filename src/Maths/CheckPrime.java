@@ -1,4 +1,4 @@
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 class Solution6{
     public boolean isPrime(int n){
        int count = 0 ;

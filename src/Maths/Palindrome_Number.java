@@ -1,4 +1,4 @@
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 class Solution3{
     public boolean isPalindrome(int n){
         if( n < 0){

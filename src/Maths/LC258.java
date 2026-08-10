@@ -1,4 +1,4 @@
-package Learn_the_Basics.Basic_Maths;
+package Maths;
 class Solution258 {
     public int addDigits(int num) {
         int sum = 0; ;
