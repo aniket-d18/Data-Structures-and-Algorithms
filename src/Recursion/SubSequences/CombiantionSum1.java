@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Solution{
-    public void findCombinations(int idx , int[] arr , int target , List<List<Integer>>ans , List<Integer> ds){
+    private void findCombinations(int idx , int[] arr , int target , List<List<Integer>> ans , List<Integer> ds){
         if(idx == arr.length){
             if(target == 0){
                 ans.add(new ArrayList<>(ds));
@@ -17,16 +17,16 @@ class Solution{
             findCombinations(idx , arr , target - arr[idx] , ans , ds);
             ds.remove(ds.size() - 1);  //after returning of recursion the added element should be removed
         }
-
         findCombinations(idx+1 , arr , target , ans , ds);
     }
-    public List<List<Integer>> combinationSum(int[] candidates , int target){
-        List<List<Integer>> ans = new ArrayList<>();
-        findCombinations(0 , candidates , target , ans , new ArrayList<>());
-        return ans;
-    }
-
+        public List<List<Integer>> combinationSum(int[] candidates , int target){
+            List<List<Integer>> ans = new ArrayList<>();
+            findCombinations(0 , candidates , target , ans , new ArrayList<>());
+            return ans;
+        }
 }
+
+
 public class CombiantionSum1 {
     static void main() {
         int[] arr = {2 , 3 , 6 , 7};

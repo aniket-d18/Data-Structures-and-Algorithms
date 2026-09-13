@@ -26,7 +26,7 @@ class PrintSubSequence{
         print(idx+1 , arl , arr, n);
     }
 }
-public class SubSequence1 {
+public class AllSubSequences {
     static void main() {
         ArrayList<Integer> arl = new ArrayList<>();
         int[] arr = {3 , 1 ,2 };
