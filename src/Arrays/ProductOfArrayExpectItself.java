@@ -24,4 +24,8 @@ public class ProductOfArrayExpectItself {
         int arr[] = {1 , 2 ,3 , 4};
         sol.productExceptSelf(arr);
     }
+
+
+    // this problem is not solved yet
+    //We have to improve its time and space complexity
 }
