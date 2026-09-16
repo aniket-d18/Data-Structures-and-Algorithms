@@ -1,7 +1,40 @@
 package Recursion.SubSequences;
-//class Solution
-//public class CombinationSum2 {
-//    static void main() {
-//
-//    }
-//}
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Solution40{
+    private void findCombinations2(int ind , int[] arr ,int target , List<List<Integer>> ans , List<Integer> ds ){
+        //base condition
+        if(ind == arr.length){
+            if(target == 0){
+                ans.add(new ArrayList<>(ds));
+                return;
+            }
+        }
+        //Pick condition
+        if(arr[ind] <= target){
+            ds.add(arr[ind]);
+            findCombinations2(ind+1 ,arr ,  target- arr[ind] , ans , ds );
+            ds.remove(ds.size() - 1) ;
+        }
+
+        //Not Pick condition
+        findCombinations2(ind+1 , arr , target , ans , ds);
+    }
+
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        List<List<Integer>> ans = new ArrayList<>();
+        findCombinations2(0 , candidates , target ,  ans , new ArrayList<>() );
+        return ans ;
+    }
+}
+public class CombinationSum2 {
+    static void main() {
+        int[] arr = {10,1,2,7,6,1,5};
+        int target = 8 ;
+        Solution40 sol = new Solution40();
+        List<List<Integer>> ans = sol.combinationSum2(arr , target);
+        System.out.println(ans);
+    }
+}
