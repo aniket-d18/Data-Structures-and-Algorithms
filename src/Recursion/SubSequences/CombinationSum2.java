@@ -1,30 +1,31 @@
 package Recursion.SubSequences;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 class Solution40{
     private void findCombinations2(int ind , int[] arr ,int target , List<List<Integer>> ans , List<Integer> ds ){
         //base condition
-        if(ind == arr.length){
-            if(target == 0){
-                ans.add(new ArrayList<>(ds));
-                return;
-            }
+        if(target == 0){
+            ans.add(new ArrayList<>(ds));
+            return;
         }
-        //Pick condition
-        if(arr[ind] <= target){
-            ds.add(arr[ind]);
-            findCombinations2(ind+1 ,arr ,  target- arr[ind] , ans , ds );
+        for(int i = ind ; i < arr.length ; i++){
+            if(i > ind && arr[i] == arr[i-1]) continue;
+
+            if(arr[i] > target) break;
+
+            //Pick condition
+            ds.add(arr[i]);
+            findCombinations2(i+1 ,arr ,target- arr[i] , ans , ds );
             ds.remove(ds.size() - 1) ;
         }
-
-        //Not Pick condition
-        findCombinations2(ind+1 , arr , target , ans , ds);
     }
 
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> ans = new ArrayList<>();
+        Arrays.sort(candidates);
         findCombinations2(0 , candidates , target ,  ans , new ArrayList<>() );
         return ans ;
     }
