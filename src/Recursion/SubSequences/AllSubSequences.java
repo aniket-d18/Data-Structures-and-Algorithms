@@ -8,14 +8,12 @@ class PrintSubSequence{
             for(Object x : arl){
                 System.out.print(x + " ");
             }
-
             if(arl.size() == 0){
                 System.out.print("{}");
             }
             System.out.println();
             return ;
         }
-
         //Take or Pick the particular index of the subsequence
         arl.add(arr[idx]);
         print(idx+1 , arl , arr , n);
