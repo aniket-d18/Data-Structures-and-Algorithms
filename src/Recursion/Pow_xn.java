@@ -26,6 +26,6 @@ class Solution50 {
 public class Pow_xn {
     static void main() {
         Solution50 sol = new Solution50();
-        System.out.println(sol.myPow(2 , -2));
+        System.out.println(sol.myPow(2 , 10));
     }
 }
