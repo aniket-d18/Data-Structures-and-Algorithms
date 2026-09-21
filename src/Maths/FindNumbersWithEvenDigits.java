@@ -1,19 +1,19 @@
 package Maths;
 class Solution1295 {
-    public int findNumbers(int[] nums) {
-        int globalcount = 0;
-        for(int i = 0 ; i < nums.length ; i++ ){
-            int count = 0 ;
-            while(nums[i] > 0 ){
-                nums[i] = nums[i] / 10 ;
-                count ++ ;
+        public int findNumbers(int[] nums) {
+            int globalcount = 0;
+            for (int num : nums) {
+                int count = 0 ;
+                while(num > 0 ){
+                    num = num / 10 ;
+                    count ++ ;
+                }
+                if(count % 2 == 0){
+                    globalcount ++ ;
+                }
             }
-            if(count % 2 == 0){
-                globalcount ++ ;
-            }
+            return globalcount ;
         }
-        return globalcount ;
-    }
 }
 public class FindNumbersWithEvenDigits {
 
