@@ -10,6 +10,6 @@ class Solution{
 public class Factorial {
     public static void main() {
         Solution solution = new Solution();
-        System.out.println(solution.factorial(100));
+        System.out.println(solution.factorial(5));
     }
 }
